@@ -6,7 +6,10 @@
   box-sizing border-box
 
 body,
-.btn-main
+.btn-main,
+.sign-up-with-fb,
+.form__input,
+.form__send-btn
   font-family 'Dosis', sans-serif
   font-size 16px
   color #2f1946
@@ -14,11 +17,19 @@ body,
 .container
   max-width 1270px
   margin 0 auto
-  padding 25px 65px 0 65px
+  padding-top 25px
+
+.container_block_form
+  text-align center
+  overflow hidden
+  display flex
+  flex-direction column
+  align-items center
 
 .wrap-bg-loves
   background url('./img/bg-lovers.png') no-repeat
   background-size 100% auto
+  margin-bottom 245px
 
 .menu
   display flex
@@ -32,6 +43,7 @@ body,
 .menu-hamburger
   width 30px
   height 26px
+  margin-right 65px
   display flex
   flex-direction column
   justify-content space-between
@@ -161,5 +173,107 @@ body,
 
 .widget-social__link_tw
   background url('./img/tw.png') center center no-repeat
+
+.title-welcome
+  display inline-block
+  font-size 52px
+  padding-left 70px
+  margin-bottom 40px
+  background url('./img/logo-s.png') no-repeat
+
+.quote
+  max-width 784px
+  font-size 30px
+  line-height 36px
+  margin 0 auto 50px
+
+.quote__cite
+  display flex
+  justify-content flex-end
+  color #fe4a5d
+  font-style normal
+
+.wrap-bg-photo-collection
+  background url('./img/collection.png') no-repeat
+  min-width 1270px
+
+.form
+  max-width 466px
+  margin 0 auto 159px
+  padding 65px 75px
+  background linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #e22028, #f9b416) border-box
+  border 8px solid transparent
+
+.form__title
+  font-size 38px
+  margin-bottom 30px
+
+.sign-up-with-fb
+  display flex
+  justify-content center
+  align-items center
+  width 300px
+  height 40px
+  text-transform uppercase
+  border none
+  border-radius 4px
+  background-color #2f53a3
+  color #ffffff
+  letter-spacing 0.8px
+  margin-bottom 10px
+  &:hover
+    cursor pointer
+
+.sign-up-with-fb__img
+  display inline-block
+  width 6px
+  height 14px
+  margin-right 10px
+  background url('./img/fb-btn.png') no-repeat
+
+.line-text
+  font-family Dosis
+  font-size 14px
+  text-transform uppercase
+  color #9b9b9b
+  letter-spacing 0.7px
+  display flex
+  align-items center
+  margin-bottom 10px
+  &:before, &:after
+    content ''
+    display inline-block
+    height 2px
+    width 44%
+    margin-right 9px
+    border-radius 1px
+    background-color #dcdcdc
+  &:after
+    margin-right 0
+    margin-left 9px
+
+.form__input
+  width 100%
+  height 41px
+  border-radius 4px
+  border 2px solid #dcdcdc
+  margin-bottom 12px
+  letter-spacing 0.69px
+  padding-left 12px
+  &::placeholder
+    color #642f6b
+    opacity 1
+
+.form__send-btn
+  width 300px
+  height 41px
+  border none
+  border-radius 4px
+  background-color #81398b
+  color #ffffff
+  text-transform uppercase
+  letter-spacing 0.69px
+  &:hover
+    cursor pointer
 
 @import './media'
