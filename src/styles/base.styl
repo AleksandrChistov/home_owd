@@ -10,7 +10,8 @@ body,
 .sign-up-with-fb,
 .form__input,
 .form__send-btn,
-.join-now__btn
+.join-now__btn,
+.footer-subscribe__btn
   font-family 'Dosis', sans-serif
   font-size 16px
   color #2f1946
@@ -18,7 +19,6 @@ body,
 .container
   max-width 1270px
   margin 0 auto
-  padding-top 25px
 
 .container_block_form
   text-align center
@@ -37,6 +37,7 @@ body,
   align-items center
   justify-content flex-end
   margin-bottom 110px
+  padding-top 25px
 
 .menu__text
   margin-right 10px
@@ -281,6 +282,7 @@ body,
   background url('./img/bg-form.png') no-repeat
   min-width 1270px
   height 730px
+  margin-bottom 30px
   display flex
   justify-content center
   align-items center
@@ -305,5 +307,78 @@ body,
   background-image linear-gradient(to right, #e22028 0%, #f9b416 100%)
   &:hover
     cursor pointer
+
+.footer-subscribe
+  display flex
+  justify-content center
+  margin-bottom 30px
+
+.footer-subscribe__label
+  color #00cfae
+
+.footer-subscribe__input
+  width 258px
+  height 40px
+  padding-left 12px
+  border-radius 4px 0 0 4px
+  border 1px solid #cdcdcd
+  color #818181
+  font-family Lato
+  font-size 16px
+  margin-left 12px
+  &::placeholder
+    color #cacaca
+    font-family Lato
+    font-size 16px
+
+.footer-subscribe__btn
+  width 135px
+  height 40px
+  border none
+  border-radius 0 4px 4px 0
+  background-color #00cfae
+  color #fefefe
+  text-transform uppercase
+  letter-spacing 0.8px
+  &:hover
+    cursor pointer
+
+.footer-menu
+  height 70px
+  background-color #fafafa
+  list-style-type none
+  display flex
+  justify-content center
+  align-items center
+  margin-bottom 20px
+
+.footer-menu__item:nth-child(n+2)
+  margin-left 57px
+
+.footer-menu__link
+  text-decoration none
+  color #2f1946
+  line-height 30px
+  text-transform uppercase
+
+.footer__img-flags
+  display block
+  margin 0 auto 23px
+
+.footer__line
+  border none
+  max-width 828px
+  height 1px
+  border-radius 1px
+  margin 0 auto 12px
+  background-color #d3d3d3
+
+.footer__copyright
+  font-family Lato, sans-serif
+  font-size 12px
+  line-height 24px
+  color #2f1946
+  text-align center
+  margin-bottom 12px
 
 @import './media'
