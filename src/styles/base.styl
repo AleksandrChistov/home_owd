@@ -9,7 +9,8 @@ body,
 .btn-main,
 .sign-up-with-fb,
 .form__input,
-.form__send-btn
+.form__send-btn,
+.join-now__btn
   font-family 'Dosis', sans-serif
   font-size 16px
   color #2f1946
@@ -273,6 +274,35 @@ body,
   color #ffffff
   text-transform uppercase
   letter-spacing 0.69px
+  &:hover
+    cursor pointer
+
+.wrap-bg-join-now
+  background url('./img/bg-form.png') no-repeat
+  min-width 1270px
+  height 730px
+  display flex
+  justify-content center
+  align-items center
+
+.join-now__title
+  font-size 60px
+  color #67326e
+
+.join-now__desc
+  font-size 46px
+  line-height 46px
+  color #67326e
+  margin-bottom 20px
+
+.join-now__btn
+  width 139px
+  height 39px
+  border none
+  border-radius 3px
+  background-color #e22028
+  color #ffffff
+  background-image linear-gradient(to right, #e22028 0%, #f9b416 100%)
   &:hover
     cursor pointer
 
