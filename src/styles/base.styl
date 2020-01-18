@@ -40,26 +40,53 @@ body,
   padding-top 25px
 
 .menu__text
-  margin-right 10px
+  font-size 18px
 
 .menu-hamburger
-  width 30px
-  height 26px
-  margin-right 65px
   display flex
-  flex-direction column
-  justify-content space-between
+  align-items center
+  margin-right 53px
   &:hover
     cursor pointer
-  &:hover .menu-hamburger__line
-    background-color #ff6c00
+    text-decoration underline
+    .menu-hamburger__line
+      background-color #ff6c00
+      &:before, &:after
+        background-color #ff6c00
+  &:active
+    text-decoration none
+    .menu-hamburger__line
+      height 0
+      &:before
+        transform rotate(-45deg) translate(-6px,6px)
+      &:after
+        transform rotate(45deg) translate(-5px,-5px)
+        top 6px
 
 .menu-hamburger__line
-  width 100%
-  height 4.8px
-  display block
+  display inline-block
+  width 30px
+  height 5px
+  margin-left 12px
   background-color #e22028
-  border-radius 3px
+  position relative
+  transition all .5s
+  &:before, &:after
+    content ''
+    width 30px
+    height 5px
+    background-color #e22028
+    border-radius 3px
+    position absolute
+    top -10px
+    left 0
+    transition all .5s
+  &:after
+    top 10px
+  &:active
+    background-color #45124c
+  &:nth-child(n+2)
+    margin-top 5.2px
 
 .logo
   margin 0 auto
@@ -97,8 +124,13 @@ body,
   background-color #81398b
   font-size 18px
   color #ffffff
+  outline none
   &:hover
     cursor pointer
+    background-color #72337b
+  &:active
+    background-color #8e3f99
+    box-shadow inset 0 0 3px 2px rgba(0,0,0,0.25)
 
 .btn-main__arrow
   fill #ffffff
@@ -119,6 +151,10 @@ body,
   margin-bottom -110px
   &:nth-child(n+2)
     margin-left 40px
+  &:hover
+    box-shadow 0px 0px 3px 3px rgba(0, 0, 0, 0.2)
+  &:hover .advantages-block__text
+      text-shadow 1px 1px 5px rgba(0, 0, 0, 0.5)
 
 .advantages-block__text
   width 100%
@@ -157,9 +193,12 @@ body,
   width 24px
   height 24px
   background-size 24px 24px
-  transition all 0.4s
+  transition transform 0.4s
   &:hover
     transform rotate(360deg)
+  &:active
+    transform scale(0.9)
+    transition none
 
 .widget-social__link_share
   background url('./img/share.png') center center no-repeat
@@ -223,8 +262,13 @@ body,
   color #ffffff
   letter-spacing 0.8px
   margin-bottom 10px
+  text-decoration none
   &:hover
     cursor pointer
+    background-color #24407f
+  &:active
+    background-color #3965c7
+    box-shadow inset 0 0 3px 3px rgba(0, 0, 0, 0.2)
 
 .sign-up-with-fb__img
   display inline-block
@@ -277,6 +321,10 @@ body,
   letter-spacing 0.69px
   &:hover
     cursor pointer
+    background-color #602a68
+  &:active
+    background-color #a64bb2
+    box-shadow inset 0 0 3px 3px rgba(0, 0, 0, 0.2)
 
 .wrap-bg-join-now
   background url('./img/bg-form.png') no-repeat
@@ -302,11 +350,16 @@ body,
   height 39px
   border none
   border-radius 3px
+  line-height 40px
   background-color #e22028
   color #ffffff
   background-image linear-gradient(to right, #e22028 0%, #f9b416 100%)
+  transition transform .5s
   &:hover
     cursor pointer
+    transform scale(1.1)
+  &:active
+    box-shadow 0 0 3px 3px rgba(0, 0, 0, 0.3)
 
 .footer-subscribe
   display flex
@@ -342,6 +395,10 @@ body,
   letter-spacing 0.8px
   &:hover
     cursor pointer
+    background-color #05957e
+  &:active
+    background-color #00cfae
+    box-shadow inset 0 0 3px 3px rgba(0, 0, 0, 0.2)
 
 .footer-menu
   height 70px
@@ -360,6 +417,8 @@ body,
   color #2f1946
   line-height 30px
   text-transform uppercase
+  &:hover
+    color #775799
 
 .footer__img-flags
   display block
