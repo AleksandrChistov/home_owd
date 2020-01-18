@@ -5,22 +5,161 @@
   margin 0
   box-sizing border-box
 
-body
+body,
+.btn-main
   font-family 'Dosis', sans-serif
-
-.title
-  font-size 52px
+  font-size 16px
   color #2f1946
-
-.descr
-  font-family 'Lato', sans-serif
 
 .container
   max-width 1270px
   margin 0 auto
+  padding 25px 65px 0 65px
+
+.wrap-bg-loves
+  background url('./img/bg-lovers.png') no-repeat
+  background-size 100% auto
+
+.menu
+  display flex
+  align-items center
+  justify-content flex-end
+  margin-bottom 110px
+
+.menu__text
+  margin-right 10px
+
+.menu-hamburger
+  width 30px
+  height 26px
+  display flex
+  flex-direction column
+  justify-content space-between
+  &:hover
+    cursor pointer
+  &:hover .menu-hamburger__line
+    background-color #ff6c00
+
+.menu-hamburger__line
+  width 100%
+  height 4.8px
+  display block
+  background-color #e22028
+  border-radius 3px
+
+.logo
+  margin 0 auto
   text-align center
-  outline 3px solid tomato
-  margin-top 20px
-  padding 20px
+  margin-bottom 60px
+
+.logo-wrap
+  text-align center
+
+.title
+  font-size 80px
+  text-shadow 0 0 3px rgba(0, 0, 0, 0.25)
+  text-transform uppercase
+  letter-spacing 1.67px
+  margin-bottom 60px
+
+.btn-main-wrap
+  display inline-block
+  padding 10px
+  box-shadow 0 0 5px rgba(0, 0, 0, 0.25)
+  border-radius 36px
+  border 1px solid #81398b
+  margin-bottom 75px
+
+.btn-main
+  width 163px
+  height 50px
+  display flex
+  justify-content center
+  align-items center
+  margin 0 auto
+  box-shadow 0 0 5px rgba(0, 0, 0, 0.25)
+  border none
+  border-radius 25px
+  background-color #81398b
+  font-size 18px
+  color #ffffff
+  &:hover
+    cursor pointer
+
+.btn-main__arrow
+  fill #ffffff
+  transform rotate(90deg)
+  margin-left 5px
+  margin-right -3px
+
+.advantages
+  display flex
+  justify-content center
+
+.advantages-block
+  width 235px
+  height 330px
+  display flex
+  align-items flex-end
+  box-shadow 0 0 5px rgba(0, 0, 0, 0.25)
+  margin-bottom -110px
+  &:nth-child(n+2)
+    margin-left 40px
+
+.advantages-block__text
+  width 100%
+  height 110px
+  font-size 32px
+  line-height 110px
+  text-align center
+  background-color rgba(0, 0, 0, 0.1)
+  color #ffffff
+
+.one-world
+  background url('./img/worldwide.png') #fe4a5d center 65px no-repeat
+
+.two-hearts
+  background url('./img/two-hearts.png') #e22028 center 65px no-repeat
+
+.one-site
+  background url('./img/rss.png') #ff6c00 center 74px no-repeat
+
+.widget-social
+  position fixed
+  top 50%
+  left 0
+  margin-top -98px
+  width 50px
+  height 195px
+  padding 15px 0 18px
+  box-shadow 0 0 5px rgba(0, 0, 0, 0.4)
+  border-radius 0 3px 3px 0
+  background-color #45124c
+  list-style-type none
+  text-align center
+
+.widget-social__link
+  display inline-block
+  width 24px
+  height 24px
+  background-size 24px 24px
+  transition all 0.4s
+  &:hover
+    transform rotate(360deg)
+
+.widget-social__link_share
+  background url('./img/share.png') center center no-repeat
+  margin-bottom 18px
+
+.widget-social__link_fb
+  background url('./img/fb.png') center center no-repeat
+  margin-bottom 21px
+
+.widget-social__link_insta
+  background url('./img/insta.png') center center no-repeat
+  margin-bottom 20px
+
+.widget-social__link_tw
+  background url('./img/tw.png') center center no-repeat
 
 @import './media'
