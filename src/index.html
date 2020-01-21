@@ -50,12 +50,6 @@
 					</div>
 				</div>
 
-				<ul class="widget-social">
-					<li class="widget-social__item"><a href="#" class="widget-social__link widget-social__link_share"></a></li>
-					<li class="widget-social__item"><a href="#" class="widget-social__link widget-social__link_fb"></a></li>
-					<li class="widget-social__item"><a href="#" class="widget-social__link widget-social__link_insta"></a></li>
-					<li class="widget-social__item"><a href="#" class="widget-social__link widget-social__link_tw"></a></li>
-				</ul>
 			</div>
 		</div>
 
@@ -83,7 +77,7 @@
 
 		<div class="contrainer container_overflow_hidden">
 			<div class="wrap-bg-circle">
-				<div class="circle">
+				<div class="circle circle-main">
 					<div class="circle__title">JOIN NOW</div>
 					<p class="circle__desc">It’s free!</p>
 					<button class="circle__btn">GET STARTED</button>
@@ -109,11 +103,18 @@
 				<div class="footer-subscribe">
 					<label for="emailSubscribe" class="footer-subscribe__label">
 						Sign up for our newsletter
-						<input type="email" name="email-subscribe" id="emailSubscribe" 
-						placeholder="Email Address" class="footer-subscribe__input">
 					</label>
+					<input type="email" name="email-subscribe" id="emailSubscribe" 
+					placeholder="Email Address" class="footer-subscribe__input">
 					<button class="footer-subscribe__btn">Subscribe</button>
 				</div>
+
+				<ul class="widget-social">
+					<li class="widget-social__item"><a href="#" class="widget-social__link widget-social__link_share"></a></li>
+					<li class="widget-social__item"><a href="#" class="widget-social__link widget-social__link_fb"></a></li>
+					<li class="widget-social__item"><a href="#" class="widget-social__link widget-social__link_insta"></a></li>
+					<li class="widget-social__item"><a href="#" class="widget-social__link widget-social__link_tw"></a></li>
+				</ul>
 
 				<ul class="footer-menu">
 					<li class="footer-menu__item"><a href="#" class="footer-menu__link">About</a></li>
@@ -125,7 +126,11 @@
 					<li class="footer-menu__item"><a href="#" class="footer-menu__link">Terms of Use</a></li>
 				</ul>
 
-				<img src="./img/flags.png" alt="flags" class="footer__img-flags">
+				<picture>
+					<source srcset="./img/flags_s.png" media="(max-width: 480px)">
+					<source srcset="./img/flags_m.png" media="(max-width: 750px)">
+					<img src="./img/flags.png" alt="flags" class="footer__img-flags">
+				</picture>
 
 				<hr class="footer__line">
 

@@ -36,7 +36,7 @@ body,
   display flex
   align-items center
   justify-content flex-end
-  margin-bottom 110px
+  margin-bottom 9%
   padding-top 25px
 
 .menu__text
@@ -89,9 +89,11 @@ body,
     margin-top 5.2px
 
 .logo
+  max-width 100%
   margin 0 auto
-  text-align center
   margin-bottom 60px
+  padding 0 100px
+  text-align center
 
 .logo-wrap
   text-align center
@@ -101,7 +103,8 @@ body,
   text-shadow 0 0 3px rgba(0, 0, 0, 0.25)
   text-transform uppercase
   letter-spacing 1.67px
-  margin-bottom 60px
+  margin-bottom 55px
+  padding 0 75px
 
 .btn-main-wrap
   display inline-block
@@ -150,7 +153,7 @@ body,
   box-shadow 0 0 5px rgba(0, 0, 0, 0.25)
   margin-bottom -110px
   &:nth-child(n+2)
-    margin-left 40px
+    margin-left 3.1%
   &:hover
     box-shadow 0px 0px 3px 3px rgba(0, 0, 0, 0.2)
   &:hover .advantages-block__text
@@ -187,6 +190,7 @@ body,
   background-color #45124c
   list-style-type none
   text-align center
+  z-index 2
 
 .widget-social__link
   display inline-block
@@ -223,10 +227,11 @@ body,
   background url('./img/logo-s.png') no-repeat
 
 .quote
-  max-width 784px
+  max-width 910px
   font-size 30px
   line-height 36px
   margin 0 auto 48px
+  padding 0 60px
 
 .quote__cite
   display flex
@@ -261,7 +266,7 @@ body,
   display flex
   justify-content center
   align-items center
-  width 300px
+  max-width 300px
   height 40px
   text-transform uppercase
   border none
@@ -269,7 +274,7 @@ body,
   background-color #2f53a3
   color #ffffff
   letter-spacing 0.8px
-  margin-bottom 10px
+  margin 0 auto 10px
   text-decoration none
   &:hover
     cursor pointer
@@ -474,10 +479,13 @@ body,
 .footer-subscribe
   display flex
   justify-content center
+  flex-wrap wrap
   margin-bottom 35px
 
 .footer-subscribe__label
   color #00cfae
+  line-height 40px
+  text-align center
 
 .footer-subscribe__input
   width 258px
@@ -512,21 +520,22 @@ body,
     box-shadow inset 0 0 3px 3px rgba(0, 0, 0, 0.2)
 
 .footer-menu
-  height 70px
+  min-height 70px
   background-color #fafafa
   list-style-type none
   display flex
+  flex-wrap wrap
   justify-content center
   align-items center
   margin-bottom 25px
 
 .footer-menu__item:nth-child(n+2)
-  margin-left 57px
+  margin-left 4.5%
 
 .footer-menu__link
   text-decoration none
   color #2f1946
-  line-height 30px
+  line-height 16px
   text-transform uppercase
   &:hover
     color #775799
@@ -550,5 +559,6 @@ body,
   color #2f1946
   text-align center
   margin-bottom 12px
+  padding 0 50px
 
 @import './media'
