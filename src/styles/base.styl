@@ -10,7 +10,7 @@ body,
 .sign-up-with-fb,
 .form__input,
 .form__send-btn,
-.join-now__btn,
+.circle__btn,
 .footer-subscribe__btn
   font-family 'Dosis', sans-serif
   font-size 16px
@@ -20,7 +20,7 @@ body,
   max-width 1270px
   margin 0 auto
 
-.container_block_form
+.container_overflow_hidden
   text-align center
   overflow hidden
   display flex
@@ -244,6 +244,14 @@ body,
   padding 55px 75px 65px
   background linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #e22028, #f9b416) border-box
   border 8px solid transparent
+  &:hover
+    animation gradient .5s linear 2
+
+@keyframes gradient
+  from 
+    background linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #e22028, #f9b416) border-box
+  to 
+    background linear-gradient(#fff, #fff) padding-box, linear-gradient(-90deg, #e22028, #f9b416) border-box
 
 .form__title
   font-size 38px
@@ -326,26 +334,128 @@ body,
     background-color #a64bb2
     box-shadow inset 0 0 3px 3px rgba(0, 0, 0, 0.2)
 
-.wrap-bg-join-now
-  background url('./img/bg-form.png') no-repeat
+.wrap-bg-circle
+  background url('./img/bg-circle.png') no-repeat
   min-width 1270px
   height 730px
   margin-bottom 32px
   display flex
   justify-content center
   align-items center
+  position relative
+  overflow hidden
 
-.join-now__title
+.circle
+  width 372px
+  height 372px
+  background-color #fff
+  border-radius 50%
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  position absolute
+  z-index 1
+  &:before
+    content: ''
+    width 462px
+    height 462px
+    border 1px solid rgba(255, 255, 255, 0.4)
+    border-radius 50%
+    position absolute
+    z-index -1
+
+.circle_width_202
+  width 202px
+  height 202px
+  top 95px
+  left 92px
+  transform rotate(-6deg)
+  background-color #ff6c00
+  &:before
+    width 270px
+    height 270px
+
+.circle_width_159
+  width 159px
+  height 159px
+  bottom 68px
+  left 185px
+  transform rotate(4deg)
+  line-height 33.63px
+  background-color #f9b416
+  &:before
+    width 212px
+    height 212px
+
+.circle_width_156
+  width 156px
+  height 156px
+  top 60px
+  right 165px
+  transform rotate(3deg)
+  line-height 27.97px
+  background-color #fe4a5d
+  &:before
+    width 203px
+    height 203px
+
+.circle_width_102
+  width 102px
+  height 102px
+  bottom 165px
+  right 226px
+  background url('./img/gift.png') #fe4a5d center no-repeat
+  &:before
+    width 133px
+    height 133px
+
+.circle_width_189
+  width 189px
+  height 189px
+  bottom 175px
+  right -135px
+  transform rotate(7deg)
+  line-height 27.91px
+  background-color #ff6c00
+  &:before
+    width 247px
+    height 247px
+
+.circle__title
   font-size 60px
   color #67326e
 
-.join-now__desc
+.circle__title_size_32,
+.circle__title_size_25,
+.circle__title_size_24,
+.circle__title_size_20
+  font-size 32px
+  text-transform uppercase
+  color #ffffff
+
+.circle__title_size_20
+  font-size 20px
+
+.circle__title_size_24
+  font-size 24px
+
+.circle__title_size_25
+  font-size 25px
+
+.circle__title_size_40
+  font-size 40px
+
+.circle__title_size_44
+  font-size 44px
+
+.circle__desc
   font-size 46px
   line-height 46px
   color #67326e
   margin-bottom 20px
 
-.join-now__btn
+.circle__btn
   width 139px
   height 39px
   border none
@@ -373,8 +483,9 @@ body,
   width 258px
   height 40px
   padding-left 12px
-  border-radius 4px 0 0 4px
   border 1px solid #cdcdcd
+  border-right none
+  border-radius 4px 0 0 4px
   color #818181
   font-family Lato
   font-size 16px
